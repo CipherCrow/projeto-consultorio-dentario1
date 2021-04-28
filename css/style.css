@@ -1,24 +1,90 @@
 		/*imports*/
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 		/*Reset*/
 *{
 	padding: 0;
 	margin:0;
 	box-sizing: border-box;
 	outline: none;
+    font-family: 'Roboto', sans-serif;		
 }
 html{
 	scroll-behavior: smooth;
 }
 html,body{
 	height: 100%;
+	font-size: 10px;
 }
 a{text-decoration: none;color: initial;}
 		/*auxiliares*/
 .container{
-	max-width: 1280px;
+	max-width: 96rem;
 	margin: 0 auto;
 	padding: 0 2%;
 }
 		/*Site*/
+
 		/*header*/
+.header-wrapper{
+	width: 100%;
+	padding: 3rem 0;
+	min-height: 70rem;
+	background-image: url('../images/bg_01.png');
+	background-size: cover;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+.logo{
+	position: relative;
+	top: -.5rem;
+	width: 16.4rem;
+	height: 6.2rem;
+	background-image: url('../images/logo.png');
+	background-size: 100% 100%;
+}
+.navegacao{
+	font-size: 1.8rem;
+}
+.navegacao ul{
+	list-style-type: none;
+}
+.navegacao li{
+	display: inline-block;
+	margin: 0 1rem;
+	color: white;
+	transition: .3s;
+}
+.navegacao li a{
+	color: inherit;
+}
+.navegacao li.selected{
+	position: relative;
+	color: #509d87;
+}
+.selected span{
+	transition: .3s;
+}
+li.selected span{
+	position: absolute;
+	bottom: -.2rem;
+	left: 0;
+	width: 50%;
+	height: .3rem;
+	background-color: #509d87;	
+}
+.telefone-header{
+	position: relative;
+	top: -.5rem;
+}
+.telefone-header span{
+	color: white;
+	font-size: 2.5rem;
+}
+.divider-line{
+	border-bottom: .3rem solid rgba(71, 83, 88,.2);
+	padding-bottom: 2.3rem;
+	width: 100%;
+}
