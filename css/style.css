@@ -157,6 +157,7 @@ li.selected span{
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
+	margin-bottom: 6rem;
 }
 .single-beneficio{
 	width: 33.3%;
@@ -173,11 +174,46 @@ li.selected span{
 }
 .single-beneficio h3 > span{
 	color:#7dd5b0;
+	font-weight: bold;
 }
 .single-beneficio p{
 	color: #2d2d2d;
 	font-size: 1.4rem;
 }
+	/*Sobre*/
+
+#sobre > .container{
+	max-width: 128rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.sobre-img{
+	width: 50%;
+}
+.sobre-img img{
+	max-width: 100%;
+}
+.sobre-conteudo{
+	width: 50%;
+	padding: 1rem 5rem;
+}
+.sobre-conteudo h2{
+	font-weight: normal;
+	color: #a9c4b8;
+	font-size: 3rem;
+}
+.sobre-conteudo h2 span{
+	color: #03ca9f;
+	font-weight: bold;
+}
+.sobre-conteudo p{
+	margin: 2rem 0;
+	color: #2d2d2d;
+	font-size: 1.6rem;
+}
+
 
 	/*Responsivo*/
 @media screen and (max-width: 900px){
@@ -199,6 +235,13 @@ li.selected span{
 	.single-beneficio{
 		width: 50%;
 		text-align: center;
+	}
+	/*sobre*/
+	.sobre-img{
+		width: 100%;
+	}
+	.sobre-conteudo{
+		width: 100%;
 	}
 }
 @media screen and (max-width: 500px){
