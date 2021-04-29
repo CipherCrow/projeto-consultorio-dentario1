@@ -213,6 +213,23 @@ li.selected span{
 	color: #2d2d2d;
 	font-size: 1.6rem;
 }
+	/*depoimento*/
+#depoimento{
+	padding-top: 20rem;
+	padding-bottom: 15rem;
+	background-image: url('../images/bg_02.png');
+	background-size: cover;
+	text-align: center;
+	color: #2d2d2d;
+}
+#depoimento h2{
+	font-size: 2.9rem;
+	font-weight: lighter;
+}
+#depoimento p{
+	margin-top: .5rem;
+	font-size: 1.5rem;
+}
 
 
 	/*Responsivo*/
@@ -242,6 +259,7 @@ li.selected span{
 	}
 	.sobre-conteudo{
 		width: 100%;
+		text-align: center;
 	}
 }
 @media screen and (max-width: 500px){
