@@ -151,9 +151,37 @@ li.selected span{
 	width: 50%;
 	padding: .5rem;
 }
+	/*Beneficios*/
+#beneficios > .container{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.single-beneficio{
+	width: 33.3%;
+	padding: 2.5rem 1rem;
+}
+.single-beneficio img{
+	max-width: 100%;
+}
+.single-beneficio h3{
+	color: black;
+	font-size: 2.5rem;
+	font-weight: lighter;
+	margin: 1.5rem 0;
+}
+.single-beneficio h3 > span{
+	color:#7dd5b0;
+}
+.single-beneficio p{
+	color: #2d2d2d;
+	font-size: 1.4rem;
+}
 
-/*Responsivo*/
+	/*Responsivo*/
 @media screen and (max-width: 900px){
+	/*header*/
 	.desktop{
 		display: none;
 	}
@@ -166,5 +194,16 @@ li.selected span{
 	}
 	.paineis-conteudo{
 		display: none;
+	}
+	/*beneficio*/
+	.single-beneficio{
+		width: 50%;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 500px){
+	/*beneficio*/
+	.single-beneficio{
+		width: 100%;
 	}
 }
