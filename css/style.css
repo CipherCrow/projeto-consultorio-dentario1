@@ -334,6 +334,70 @@ li.selected span{
 	font-size: 1.4rem;
 }
 
+/*diferenças*/
+
+#diferencas > .container{
+	max-width: 80rem;
+}
+#diferencas > .container > h2{
+	text-align: center;
+	color: #3b3e42;
+	font-weight: lighter; 
+	font-size: 2.4rem;
+	padding: 0 1rem;
+}
+#diferencas > .container > h2 > span{
+	color: #03ca9f;
+	font-weight: bolder;
+}
+.painel-diferencas{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 3rem 0;
+}
+.paineis-geral{
+	width: 40%;
+	text-align: center;
+	position: relative;
+}
+.paineis-geral h3{
+	font-size: 3rem;
+	font-weight: normal;
+}
+.paineis-geral p{
+	font-size: 1.8rem;
+	font-weight: bolder;
+}
+.paineis-geral > div{
+	margin: .5rem 0;
+}
+.tradicional-diferencas{
+	border-right: .1rem solid #646464;
+}
+.tradicional-diferencas h3,
+.tradicional-diferencas p{
+	color: #a9c4b8;
+}
+.single-tradicional{
+	position: relative;
+	z-index: 1;
+}
+.single-tradicional > span{
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%)rotateZ(-1deg); 
+	width: 50%;
+	height: .2rem;
+	z-index: 2;
+	background-color: #e89595;
+}
+.invisalign-diferencas h3,
+.invisalign-diferencas p{
+	color:  #7dd5b0;
+}
+
 	/*Responsivo*/
 @media screen and (max-width: 950px){
 	.painel-etapas{
@@ -378,6 +442,19 @@ li.selected span{
 	#depoimento{
 		top: 0;
 	}
+	/*diferenciais*/
+	.painel-diferencas{
+		flex-direction: column;
+	}
+	.paineis-geral{
+		width: 70%;
+		padding: 2rem;
+	}
+	.tradicional-diferencas{
+		border: 0;
+		border-bottom: 1px solid #646464;
+	}
+
 }
 @media screen and (max-width: 500px){
 	/*beneficio*/
@@ -402,4 +479,6 @@ li.selected span{
 	.descricao-etapas p{
 		text-align: justify;
 	}
+	/*diferenciais*/
+
 }
