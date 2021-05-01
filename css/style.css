@@ -22,6 +22,7 @@ a{text-decoration: none;color: initial;}
 	margin: 0 auto;
 	padding: 0 2%;
 }
+.mobile{display: none;}
 		/*Site*/
 
 		/*header*/
@@ -38,12 +39,11 @@ header{
 	align-content: center;
 }
 .logo{
-	position: relative;
-	top: -.5rem;
-	width: 16.4rem;
-	height: 6.2rem;
-	background-image: url('../images/logo.png');
-	background-size: 100% 100%;
+	font-size: 2.5rem;
+	color: white;
+}
+.logo a{
+	color: inherit;
 }
 .navegacao{
 	font-size: 1.8rem;
@@ -52,15 +52,17 @@ header{
 	list-style-type: none;
 }
 .navegacao li{
-	display: inline-block;
-	margin: 0 1rem;
 	color: white;
 	transition: .3s;
+}
+.desktop li{
+	display: inline-block;
+	margin: 0 1rem;
 }
 .navegacao li a{
 	color: inherit;
 }
-.navegacao li.selected{
+.desktop li.selected{
 	position: relative;
 	color: #509d87;
 }
@@ -75,6 +77,36 @@ li.selected span{
 	height: .3rem;
 	background-color: #509d87;	
 }
+.mobile i{
+	color: white;
+	cursor: pointer;
+}
+ul.mobile{
+	display:none;
+	position: absolute;
+	left: 0;
+	top: 9.8rem;
+	z-index: 3;
+	width: 100%;
+	text-align: center;
+}
+.mobile li{
+	width: 90%;
+	display: inline-block;
+	text-align: center;
+	background-color: #509d87;
+	padding: .5rem 0;
+	margin-bottom: .1rem; 
+	transition: .3s;
+}
+.mobile a{
+	display: block;
+}
+.mobile li:hover{
+	opacity: .9;
+	color: black;
+}
+
 .telefone-header{
 	position: relative;
 	top: -.5rem;
@@ -471,6 +503,9 @@ footer{
 }
 @media screen and (max-width: 900px){
 	/*header*/
+	.mobile{
+		display: inline-block;
+	}
 	.desktop{
 		display: none;
 	}

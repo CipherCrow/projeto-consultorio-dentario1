@@ -1,11 +1,16 @@
 $(function(){
-	$('.navegacao a').hover(function(){
-		$('.navegacao li').removeClass('selected');
+	//menu mobile
+	$('.mobile i').click(function(){
+		$('.mobile ul').slideToggle();
+	});
+	//menu hover desktop
+	$('.desktop a').hover(function(){
+		$('.desktop li').removeClass('selected');
 		$(this).parent().addClass('selected');
 	})
-	$('.navegacao a').click(function(){
+	$('.desktop a').click(function(){
 		setTimeout(function(){
-		$('.navegacao li').removeClass('selected');
+		$('.desktop li').removeClass('selected');
 		$('.invisa').addClass('selected');
 
 		},3000);
